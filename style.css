@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+* {
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+body {
+    padding: 20px 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.desgination {
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.summary {
+    font-size: .8em;
+    padding-bottom: 20px;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.left{
+    margin-right: 20px;
+}
+.detail{
+    padding: 10px;
+    padding-left: 0;
+}
+
+.detail{
+    padding: 10px;
+    padding-left: 0;
+}
+
+.detail .mainHeading {
+    font-size: 1.5em;
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.detail .mainHeading::after {
+    content: ' ';
+    padding-top: 5px;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #eeee;
+}
+
+.contentBody div {
+    padding: 10px;
+    padding-top: 2px;
+}
+
+.contentBody div a{
+    color: black;
+    text-decoration: none;
+}
+
+.timelineItem {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+@media only screen and (max-width:718px) {
+    .body {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 10px 20px
+    }
+}
