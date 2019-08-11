@@ -1,15 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Asap');
+@import url("https://fonts.googleapis.com/css?family=Asap");
 
 * {
     margin: 0;
-    font-family: 'Asap', sans-serif;
+    font-family: "Asap", sans-serif;
 }
 
 body {
-    padding: 20px 20px;
+    background: #536976; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #292e49,
+        #536976
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #292e49,
+        #536976
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: aliceblue;
+    padding: 50px;
     display: grid;
     justify-content: center;
     align-items: center;
+    line-height: 1.5em;
+}
+h1 {
+    padding-bottom: 20px;
 }
 
 .desgination {
@@ -18,7 +36,7 @@ body {
 }
 
 .summary {
-    font-size: .8em;
+    font-size: 0.8em;
     padding-bottom: 20px;
 }
 
@@ -27,15 +45,15 @@ body {
     grid-template-columns: 1fr 1.5fr;
 }
 
-.left{
+.left {
     margin-right: 20px;
 }
-.detail{
+.detail {
     padding: 10px;
     padding-left: 0;
 }
 
-.detail{
+.detail {
     padding: 10px;
     padding-left: 0;
 }
@@ -47,7 +65,7 @@ body {
 }
 
 .detail .mainHeading::after {
-    content: ' ';
+    content: " ";
     padding-top: 5px;
     display: block;
     width: 100%;
@@ -59,8 +77,16 @@ body {
     padding-top: 2px;
 }
 
-.contentBody div a{
-    color: black;
+.contentBody ul {
+    column-count: 2;
+}
+
+.contentBody ul li {
+    padding: 3px;
+}
+
+.contentBody div a {
+    color: aliceblue;
     text-decoration: none;
 }
 
@@ -69,12 +95,12 @@ body {
     grid-template-columns: 1fr 5fr;
 }
 
-@media only screen and (max-width:718px) {
+@media only screen and (max-width: 718px) {
     .body {
         grid-template-columns: 1fr;
     }
 
     body {
-        padding: 10px 20px
+        padding: 10px 20px;
     }
 }
